@@ -1,0 +1,49 @@
+/* Global */
+
+:root{
+
+--darkColor:#000;
+--lightColor:#fff;
+--PrimaryColor:#FFB200;
+/* overskrifter */
+--SecondaryColor:#760285;
+/* farge på knapper osv */
+--accentPrimColor:#F0DE1E;
+/* lyserer versjon av hovedfargen */
+--accentSecColor:#D9D9D9;
+/* hovre over knapper */
+
+--defaultSpacing: 1.6rem;
+
+--defaultFontFamily:"roboto";
+--headingFontFamily:"orbitron";
+
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    margin: 0;
+    font-size: var(--defaultSpacing);
+    padding: var(--defaultSpacing);
+    color: var(--darkColor);
+}
+
+/* Header */
+
+
+
+h1,h2,h3{
+    font-family: var(--headingFontFamily);
+    color: var(--PrimaryColor);
+    
+}
+
+img{
+    width: 20rem;
+    height: 20rem;
+    background-color: var(--PrimaryColor);
+}
+
