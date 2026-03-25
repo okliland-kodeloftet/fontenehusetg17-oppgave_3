@@ -165,3 +165,38 @@ font-size: 1rem;
 font-style: italic;
 margin: 6px;
 }
+
+/* The Hail Mary */
+
+.theHailMary{
+height: 100dvh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.theHailMaryTitle{
+
+}
+
+.theHailMaryTextContainer, .theHailMaryImgContainer {
+min-width: 50%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.theHailMaryText{
+width: 30rem;
+}
+
+.theHailMaryImg{
+width: 100%;
+}
+
+.theHailMaryImgText{
+font-size: 1rem;
+font-style: italic;
+margin: 6px;
+}
