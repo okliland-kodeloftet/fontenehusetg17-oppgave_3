@@ -31,10 +31,6 @@ body{
     color: var(--darkColor);
 }
 
-/* Header */
-
-
-
 h1,h2,h3{
     font-family: var(--headingFontFamily);
     color: var(--PrimaryColor);
@@ -47,3 +43,45 @@ img{
     background-color: var(--PrimaryColor);
 }
 
+/* Header */
+
+.header{
+    position: sticky;
+    top: 0;
+    background-color: var(--lightColor);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navClass{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 1.6rem;
+    list-style-type: none;
+}
+
+.navClass a{
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--SecondaryColor);
+}
+
+.navClass a:hover{
+    text-decoration: underline;
+    color: var(--accentSecColor);
+}
+
+.hamburgerIcon{
+    height: 3.2rem;
+    width: 3.2rem;
+    display: none;
+    background-color: initial;
+}
+
+.navIcon{
+    height: 6.4rem;
+    width: 6.4rem;
+    background-color: initial;
+}
