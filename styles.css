@@ -28,13 +28,18 @@ body{
     margin: 0;
     font-size: var(--defaultSpacing);
     padding: var(--defaultSpacing);
-    color: var(--darkColor);
+    color: var(--SecondaryColor);
 }
 
 h1,h2,h3{
     font-family: var(--headingFontFamily);
     color: var(--PrimaryColor);
-    
+}
+
+h4{
+    font-family: var(--headingFontFamily);
+    color: var(--PrimaryColor);
+    display: inline;
 }
 
 img{
@@ -48,7 +53,7 @@ img{
 .header{
     position: sticky;
     top: 0;
-    background-color: var(--lightColor);
+    background-color: var(--accentSecColor);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -57,7 +62,7 @@ img{
 .navClass{
     display: flex;
     padding: 0;
-    margin: 0;
+    margin: 12px;
     gap: 1.6rem;
     list-style-type: none;
 }
@@ -70,7 +75,7 @@ img{
 
 .navClass a:hover{
     text-decoration: underline;
-    color: var(--accentSecColor);
+    color: var(--PrimaryColor);
 }
 
 .hamburgerIcon{
@@ -84,4 +89,79 @@ img{
     height: 6.4rem;
     width: 6.4rem;
     background-color: initial;
+}
+
+/* MAIN */
+
+/* about */
+
+.hero{
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-image: url(img/Hail\ mary\ BG\ 3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100dvh;
+}
+
+.heroIntro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.heroText{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.heroImg{
+    width: 100%;
+}
+
+/* projectHailMary */
+
+.projectHailMary{
+height: 100dvh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.projectHailMaryTextContainer, .projectHailMaryImgContainer{
+min-width: 50%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.projectHailMaryTitle{
+
+}
+
+.projectHailMaryText{
+width: 30rem;
+}
+
+
+.projectHailMaryImg{
+height: 100%;
+}
+
+.projectHailMaryImgText{
+font-size: 1rem;
+font-style: italic;
+margin: 6px;
 }
