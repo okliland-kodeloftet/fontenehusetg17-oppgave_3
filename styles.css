@@ -101,20 +101,26 @@ img{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    
+}
 
+.heroBackgroundImage{
     background-image: url(img/Hail\ mary\ BG\ 3.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100dvh;
+    
 }
 
 .heroIntro{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     gap: 1.6rem;
+    max-width: 50%;
+    background-color: #00000037;
+    
 }
 
 .heroText{
@@ -140,13 +146,19 @@ justify-content: center;
 align-items: center;
 }
 
-.projectHailMaryTextContainer, .projectHailMaryImgContainer{
+.projectHailMaryTextContainer , .projectHailMaryImgContainer{
 min-width: 50%;
 /* relativ?? */
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+}
+
+
+.projectHailMaryTextContainer2{
+    display: inline;
+    
 }
 
 .projectHailMaryTitle{
@@ -175,6 +187,7 @@ height: 100dvh;
 display: flex;
 justify-content: center;
 align-items: center;
+
 }
 
 .theHailMaryTitle{
@@ -182,11 +195,12 @@ align-items: center;
 }
 
 .theHailMaryTextContainer, .theHailMaryImgContainer {
-max-width: 100dvw;
+max-width: 30dvw;
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+
 }
 
 .theHailMaryText{
@@ -212,4 +226,37 @@ height: 100%;
 font-size: 1rem;
 font-style: italic;
 margin: 6px;
+}
+
+
+/* CREW */
+
+.crew{
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+}
+
+.crewList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.6rem;
+    list-style-type: none;
+    padding: 0;
+}
+
+.crewCard{
+    width: 30rem;
+    border: 2px var(--accentPrimColor); 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.6rem;
+    text-align: center;
 }
