@@ -121,7 +121,7 @@ img{
     align-items: center;
     flex-direction: column;
     gap: 1.6rem;
-    max-width: 50%;
+    max-width: 30%;
     background-color: #000000b4;
     border: 1px solid var(--PrimaryColor);
     border-radius: 10px;
@@ -149,6 +149,7 @@ height: 100dvh;
 display: flex;
 justify-content: center;
 align-items: center;
+flex-direction: row;
 }
 
 .projectHailMaryTextContainerBorder{
@@ -157,20 +158,16 @@ align-items: center;
 }
 
 .projectHailMaryTextContainer , .projectHailMaryImgContainer{
-min-width: 50%;
+min-width: 30%;
 /* relativ?? */
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-
 }
 
 
-.projectHailMaryTextContainer2{
-    display: inline;
-    
-}
+
 
 .projectHailMaryTitle{
 
@@ -202,15 +199,20 @@ align-items: center;
 }
 
 .theHailMaryTitle{
-
+    
 }
 
 .theHailMaryTextContainer, .theHailMaryImgContainer {
-max-width: 30dvw;
+max-width: 20dvw;
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+padding: 16px;
+}
+
+.theHailMaryTextContainer2{
+    display: inline;
 
 }
 
@@ -273,6 +275,64 @@ margin: 6px;
    align-items: center; 
     gap: 1.6rem;
     text-align: center;
-    
-    
+}
+
+/* FOOTER */
+
+.footer{
+   display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 16px;
+    gap: 12px;
+    background-color: var(--accentSecColor);
+     */
+}
+
+.footerCredits{
+    gap: 12px;
+}
+
+/* Media Query */
+
+@media(max-width 426px){
+    .headerNav{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+    }
+
+    .navClass{
+        display: none;
+    }
+
+    .navHamburgerList{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .hamburgerIcon{
+        display: inline;
+    }
+
+    .heroIntro{
+        flex-direction: column;
+    }
+
+    .projectHailMary{
+        flex-direction: column;
+    }
+
+    .theHailMary{
+        flex-direction: column;
+    }
+
+    .crewList{
+        flex-direction: column;
+    }
+
 }
