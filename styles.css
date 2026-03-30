@@ -195,7 +195,7 @@ height: 100dvh;
 display: flex;
 justify-content: center;
 align-items: center;
-
+gap: 16px;
 }
 
 .theHailMaryTitle{
@@ -298,7 +298,7 @@ margin: 6px;
 
 /* Media Query */
 
-@media(max-width 426px){
+@media(max-width: 426px){
     .headerNav{
         display: flex;
         flex-direction: column-reverse;
@@ -321,18 +321,24 @@ margin: 6px;
 
     .heroIntro{
         flex-direction: column;
+        
     }
 
     .projectHailMary{
         flex-direction: column;
+        
     }
 
     .theHailMary{
         flex-direction: column;
+       
     }
 
     .crewList{
         flex-direction: column;
+       
     }
+
+
 
 }
