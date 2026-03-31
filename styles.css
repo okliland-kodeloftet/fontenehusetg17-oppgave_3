@@ -60,6 +60,9 @@ img{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: -1.6rem;
+    margin: -1.6rem;
+    
 }
 
 .navClass{
@@ -112,6 +115,7 @@ img{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    margin: -1.6rem;
     
 }
 
@@ -174,12 +178,13 @@ align-items: center;
 }
 
 .projectHailMaryText{
-width: 30rem;
+max-width: 30rem;
 }
 
 
 .projectHailMaryImg{
 height: 100%;
+margin-top: 1.6rem;
 }
 
 .projectHailMaryImgText{
@@ -191,7 +196,7 @@ margin: 6px;
 /* The Hail Mary */
 
 .theHailMary{
-height: 100dvh;
+min-height: 100dvh;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -217,7 +222,7 @@ padding: 16px;
 }
 
 .theHailMaryText{
-width: 20rem;
+max-width: 20rem;
 /* relativt? */
 
 }
@@ -266,7 +271,7 @@ margin: 6px;
 }
 
 .crewCard{
-    width: 30rem;
+    max-width: 30rem;
     border: 2px solid var(--accentPrimColor); 
     border-radius: 10px;
     display: flex;
@@ -289,6 +294,8 @@ margin: 6px;
     padding: 16px;
     gap: 12px;
     background-color: var(--accentSecColor);
+    padding: -1.6rem;
+    margin: -1.6rem;
      */
 }
 
@@ -299,6 +306,11 @@ margin: 6px;
 /* Media Query */
 
 @media(max-width: 426px){
+
+section{
+    min-height: 100dvh;
+}
+
     .headerNav{
         display: flex;
         flex-direction: column-reverse;
@@ -321,7 +333,8 @@ margin: 6px;
 
     .heroIntro{
         flex-direction: column;
-        
+        max-width: none;
+        gap: none;
     }
 
     .projectHailMary{
@@ -329,9 +342,21 @@ margin: 6px;
         
     }
 
+
     .theHailMary{
         flex-direction: column;
-       
+       gap: none;
+       max-width: none;
+       padding: none;
+       min-height: 100dvh;
+    }
+
+    .theHailMaryTextContainer, .theHailMaryImgContainer, .theHailMaryTextContainer2{
+        max-width: none;
+    }
+
+    .theHailMaryText{
+        max-width: none;
     }
 
     .crewList{
